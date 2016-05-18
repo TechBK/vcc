@@ -50,13 +50,14 @@ def xep_co(__ban_co, i):
 
 
 
-    if i == 8:
-        print('ket qua')
-        for line in __ban_co:
-            print(line)
-        return True
+
 
     if Try(__ban_co):
+        if i == 8:
+            print('ket qua')
+            for line in __ban_co:
+                print(line)
+            return True
         for j in range(0, 8):
             _ban_co = []
             for line in __ban_co:
